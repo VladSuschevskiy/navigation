@@ -1,0 +1,246 @@
+body {
+    box-sizing: 
+    border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    position: relative;
+}
+
+.b-menu {
+    background: url(../image/Menupunkt.svg); 
+    height: 100px; 
+    width: 100px; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+#pentagon .b-menu {
+    background: url(../image/Frame1234.svg); 
+    height: 100px; 
+    width: 100px; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.navigation {
+    display: flex; 
+    justify-content: space-around; 
+    width: 100%;
+    width: 890px;
+}
+
+.nav-item {
+    cursor: pointer; 
+    line-height: 60px; 
+    list-style: none; 
+    font-size: 34px; 
+    align-items: center;
+}
+
+.link {
+    text-decoration: none; 
+    color: #000;
+}
+
+.link:hover {
+    color: #ff2400 !important;
+}
+
+.b-menu .navigation .nav-item .link {
+    text-decoration: none; 
+    color: #fff !important;
+}
+
+.logo {
+    background: url(../image/Сгруппировать\ 890.svg); 
+    height: 100px; 
+    width: 250px; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+#pentagon .logo {
+    background: url(../image/Компонент\ 56\ –\ 7.svg); 
+    height: 100px; 
+    width: 250px; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.b-menu:hover > .el {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.el {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: .55s opacity, .55s visibility !important;
+}
+
+
+@media (max-width:767px)  {
+    header .navigation, .logo {
+        display: none !important;
+    }
+
+    #pentagon {
+        position: absolute;
+        width: 150px !important;
+        height: 600px !important;
+        background-color: red;
+        display: flex;
+    }
+
+    #pentagon::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 150px;
+        top: 0 !important;
+        border-top: 190px solid transparent !important;
+        border-left: 86px solid red !important;
+        border-bottom: 410px solid transparent !important;
+    }
+
+    #pentagon {
+        display: block !important;
+    }
+
+    #pentagon .b-menu {
+        display: block !important;
+    }
+
+    #pentagon .navigation {
+        display: block !important;
+        margin-top: 50px;
+    }
+
+    #pentagon .logo {
+        display: block !important;
+        margin-top: 50px;
+        background: url(../image/logo-nav-mobile.svg) !important;
+        margin-left: 40px;
+        background-repeat: no-repeat !important;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px)  {
+    .container {
+        max-width: 960px !important;
+        justify-content: center;
+    }
+
+    .b-menu {
+        height: 80px !important;
+        width: 80px !important;
+    }
+
+    .navigation {
+        width: 400px !important;
+    }
+
+    .navigation li {
+        font-size: 24px !important;
+        justify-content: space-between !important;
+    }
+
+    #pentagon {
+        max-width: 100% !important;
+    }
+
+    #pentagon::after { 
+        border-left: 300px solid transparent !important;
+        border-right: 470px solid transparent !important;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px)  {
+    .container {
+        max-width: 960px !important;
+        justify-content: center;
+    }
+
+    .b-menu {
+        height: 80px !important;
+        width: 80px !important;
+    }
+
+    .navigation {
+        width: 600px !important;
+    }
+
+    .navigation li {
+        font-size: 34px !important;
+        justify-content: space-between !important;
+    }
+
+    #pentagon {
+        max-width: 100% !important;
+    }
+
+    #pentagon::after { 
+        border-left: 300px solid transparent !important;
+        border-right: 670px solid transparent !important;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1399px)  {
+    .container {
+        max-width: 1280px !important;
+        justify-content: center;
+    }
+
+    .b-menu {
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+    .navigation {
+        width: 800px !important;
+    }
+
+    .navigation li {
+        font-size: 34px !important;
+        justify-content: space-between !important;
+    }
+
+    #pentagon {
+        max-width: 100% !important;
+    }
+
+    #pentagon::after { 
+        border-left: 300px solid transparent !important;
+        border-right: 890px solid transparent !important;
+    }
+}
+
+#pentagon .link:hover {
+   color: #000 !important;
+}
+
+#pentagon {
+    position: absolute;
+    width: 1280px;
+    height: 90px;
+    background-color: red;
+    display: flex;
+}
+#pentagon::after {
+    content: "";
+    position: absolute;
+    top: 90px;
+    border-left: 400px solid transparent;
+    border-right: 880px solid transparent;
+    border-top: 100px solid red;
+}
